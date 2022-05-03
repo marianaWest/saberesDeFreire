@@ -15,165 +15,193 @@ html {
 body {
   margin:0;
   padding: 0;
+  background-color: black;
 }
 
 h1, h2, h3 {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.baloon {
-  padding-top: 0;
-  margin-top: 0;
-  position: relative;
-  text-align: center;
-}
-
-.userInput {
-  text-align: center;
+  color: gold;
 }
 
 
-button {
-  max-width: 40vw;
-  background-color:  transparent;
-  font-weight: bold;
-  border: none;
-  cursor: pointer;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: 4rem;
-  display: inline-block;
-  margin-bottom: 0; 
-  padding-top: 1.5rem;
-  color: black;
+/* media queries */
+
+@media (min-width: 913px) {
+  body {
+    max-height: 100vh;
+  }
+
+  button {
+    max-width: 40vw;
+    background-color:  transparent;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 4rem;
+    display: block;
+    margin: 0 auto; 
+    padding-top: 1.5rem;
+    color: gold;
+  }
+
+  .content {
+    display: flex;
+    max-width: 80vw;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+
+  .PF-foto {
+    max-width: 40vw;
+    }
+    
+
+  #Freire-fala {
+    font-size: 2.8rem;
+    color: gold;
+    max-width: 40vw;
+    padding: 10vw 5vw;
+    font-weight: normal;
+  }
+   
 }
 
-#Freire-fala {
-  font-size: 3rem;
-  position: absolute;
-  top: 35%;
-  left: 45%;
-  transform: translate(-50%, -50%);
-  color: black;
-  max-width: 25vw;
-  margin-top: 0;
-  padding-top: 0;
-}
-
-.speech-bubble-vertical {
-  display: block;
-  margin: 0 auto;
-  max-width: 34vw;
-  padding: 0;
-}
-
-.PF-logo {
-  display: block;
-  margin: 0 auto;
-  max-width: 30vw;
-}
-
- 
 
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
 
-@media (max-width: 500px) {
-h1 {
-  font-size: 5rem;
+@media (max-width: 375px) {
+  body {
+    max-height: 100vw;
+  }
+
+  button {
+    font-size: 2.2rem;
+    display: block;
+    max-width: 100%;
+    padding-top: 5vw;
+    margin: 0 auto;
+    background-color:  transparent;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: gold;
+  }
+
+.content{
+  display: flex;
+  max-width: 80vw;
+  margin: 5vw auto;
+  flex-direction: column-reverse;
+  justify-content: space-between;
 }
 
-.PF-logo {
+.PF-foto {
   max-width: 70vw;
   margin: 0 auto;
 }
 
-.speech-bubble-vertical {
-  max-width: 100%;
+#Freire-fala {
+  max-width: 90vw;
+  min-height: 30vh;
+  font-size: 2rem;
+  padding-top: 2rem;
+  text-align: center;
+  font-weight: normal;
+}
 }
 
-.speech-bubble-horizontal {
-  display: none;
+@media (min-width: 376px) and (max-width: 540px) {
+  body {
+    max-height: 100vw;
+  }
+h1 {
+  font-size: 5rem;
+}
+
+.content{
+  display: flex;
+  max-width: 80vw;
+  margin: 5vw auto;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+}
+
+.PF-foto {
+  max-width: 70vw;
+  margin: 0 auto;
 }
 
 #Freire-fala {
   max-width: 90vw;
-  position: absolute;
-  top: 40%;
-  left: 50%;
+  min-height: 25vh;
+  font-size: 2rem;
+  padding-top: 6rem;
+  text-align: center;
+  font-weight: normal;
 }
 
 button {
-  font-size: 3.6rem;
+  font-size: 2.9rem;
   display: block;
   max-width: 100%;
   padding-top: 20px;
   margin: 0 auto;
+  background-color:  transparent;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: gold;
 }
 }
 
-@media (min-width: 501px) and (max-width: 912px) {
+@media (min-width: 541px) and (max-width: 912px) {
   
-  .userInput {
-    margin: 0;
-    padding: 0;
-  }
-   
-  .PF-logo {
-    max-width: 80vw;
-    margin: 0 auto;
-  }
-  
-  .speech-bubble-vertical {
-    max-width: 80vw;
-    margin: 0 auto;
+  body {
+    max-height: 100vw;
   }
 
-  .speech-bubble-horizontal {
-    display: none;
-  }
-  
-  #leon-speaks {
-    max-width: 90vw;
-    font-size: 4rem;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
-  button {
-    font-size: 5rem;
-    margin: 0 auto;
-    padding-top: 5%;
-    display: block;
-    max-width: 100%;
-   }
+.content{
+  display: flex;
+  max-width: 80vw;
+  margin: 2vw auto;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+}
+
+.PF-foto {
+  max-width: 70vw;
+  margin: 0 auto;
+}
+
+#Freire-fala {
+  max-width: 90vw;
+  min-height: 20vh;
+  font-size: 3.5rem;
+  padding-top: 2rem;
+  text-align: center;
+  font-weight: normal;
+}
+
+button {
+  font-size: 5rem;
+  display: block;
+  max-width: 100%;
+  padding-top: 20px;
+  margin: 0 auto;
+  background-color:  transparent;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: gold;
+}
   }
 
-  @media (min-width: 913px) {
-    body {
-      max-height: 100vh;
-    }
-    .PF-logo {
-      margin-left: 10vw;
-      margin-top: 2vh; 
-      }
-    .speech-bubble-vertical {
-      display: none;
-    }
-    .speech-bubble-horizontal {
-      max-width: 40vw;
-    }
-    .baloon {
-      display: inline-block;
-      margin-right: 10vw;
-      margin-top: 15vh;
-      float: right;
-    }
-    button {
-      display: inline;
-    }
-  }
+  
 
